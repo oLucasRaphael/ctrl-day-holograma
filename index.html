@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ctrl Day - Holograma 3D</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="holoCanvas"></canvas>
+
+  <!-- Mira central discreta para alinhar a ponta da pirâmide (aperte M para esconder) -->
+  <div id="centerGuide"></div>
+
+  <!-- Painel de ajuda discreto (aperte H para esconder/mostrar) -->
+  <div id="hud">
+    <strong>CTRL DAY — CONTROLES DO HOLOGRAMA</strong>
+    <span>[1] Mascote Ctrl</span>
+    <span>[2] Logo Ctrl+Play 3D</span>
+    <span>[3] Foguete 3D Ctrl+Play</span>
+    <span>[4] Núcleo Robótica</span>
+    <span>[+ / -] Afastar / Aproximar da pirâmide</span>
+    <span>[S] Escala | [M] Mira central | [H] Ocultar menu | [F] Tela cheia</span>
+  </div>
+
+  <!-- Three.js via CDN (para rodar 100% offline no evento, baixe o three.min.js para uma pasta libs/) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
